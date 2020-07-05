@@ -1,0 +1,2 @@
+# Course_selection_for_SUFE
+上海财经大学选课蹲守脚本
