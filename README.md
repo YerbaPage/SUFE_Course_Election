@@ -6,7 +6,7 @@
 - Chrome Version 83.0.4103.116 (Official Build) (64-bit)
 
 - ```
-  pip install selenium
+  pip install -r requirements.txt
   ```
 
 - Selenium Chrome WebDriver (已附带对应Chrome 83版本的WebDriver)
