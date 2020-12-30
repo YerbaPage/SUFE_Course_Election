@@ -3,20 +3,19 @@
 
 ## Requirements
 
-- Chrome Version 83.0.4103.116 (Official Build) (64-bit)
+- Chrome Version 87.0.4280.88 (Official Build) (64-bit) 
 
 - ```
   pip install -r requirements.txt
   ```
 
-- Selenium Chrome WebDriver (已附带对应Chrome 83版本的WebDriver)
+- Selenium Chrome WebDriver (已附带对应最新版本的WebDriver)
+
+  > 可以在此下载相应版本 https://chromedriver.chromium.org/
 
 ## Procedure
 
-- 打开对应轮次选课 ipython notebook 修改第一个 Cell 中的选课页面网址 
-- 运行第一个 Cell 手动完成账号密码登录
-- 修改第二个 Cell 中的课程序号 运行第二个 Cell
-- 等...
+1. 运行相应选课轮次的 .py 文件 然后按提示完成登录操作并输入需要选课的代码就行
 
 ## Update 
 
