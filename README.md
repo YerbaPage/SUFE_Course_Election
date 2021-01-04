@@ -15,9 +15,20 @@
 
 ## Procedure
 
-1. 运行相应选课轮次的 .py 文件 然后按提示完成登录操作并输入需要选课的代码就行
+以第三轮选课为例: 
+
+1. 修改 Third_Run.py 文件 line 11: browser.get('http://eams.sufe.edu.cn/eams/stdElectCourse!defaultPage.action?electionProfile.id=5385')`中为你的选课地址 (不同年级貌似不一样)
+2. 运行
+3. 根据命令行提示完成登录并输入课程代码即可开始蹲点
 
 ## Update 
+
+#### 2021/1/4
+
+- Allow input from terminal 
+- more detailed README 
+
+#### 2020/9/1
 
 - 新增第三轮选课脚本 还是一样修改选课网址和课程序号即可 (开学选课可用)
 
