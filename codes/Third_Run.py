@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 chrome_options = webdriver.ChromeOptions()
-chrome_options.binary_location = "/usr/bin/chromium-browser"
+# chrome_options.binary_location = "/usr/bin/chromium-browser"
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-gpu')
 chrome_options.add_argument('--disable-dev-shm-usage')
