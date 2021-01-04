@@ -1,25 +1,28 @@
 # Course_selection_for_SUFE
-上海财经大学选课脚本 自动连续点击选课操作以捡漏
+上海财经大学自动选课脚本 支持二轮三轮及开学选课
 
 ## Requirements
 
-- Chrome Version 87.0.4280.88 (Official Build) (64-bit) 
+- Chrome 
 
-- ```
+- Selenium (Python)
+
+  ```
   pip install -r requirements.txt
   ```
 
-- Selenium Chrome WebDriver (已附带对应最新版本的WebDriver)
+- Selenium Chrome WebDriver (已附带对应最新版本的 WebDriver for Windows)
 
-  > 可以在此下载相应版本 https://chromedriver.chromium.org/
+  > 可以在此下载与你的 Chrome 相应的版本 https://chromedriver.chromium.org/ 移动到 `codes/`目录下即可)
 
 ## Procedure
 
 以第三轮选课为例: 
 
 1. 修改 Third_Run.py 文件 line 11: browser.get('http://eams.sufe.edu.cn/eams/stdElectCourse!defaultPage.action?electionProfile.id=5385')`中为你的选课地址 (不同年级貌似不一样)
-2. 运行
-3. 根据命令行提示完成登录并输入课程代码即可开始蹲点
+2. 在 Terminal 中运行 `Third_Run.py`
+3. 根据命令行提示在弹出的浏览器完成登录, 回车
+4. 输入课程代码, 回车, 开始蹲点
 
 ## Update 
 
