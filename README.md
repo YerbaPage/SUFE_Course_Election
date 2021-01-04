@@ -19,9 +19,24 @@
 
 以第三轮选课为例: 
 
-1. 修改 Third_Run.py 文件 line 11: browser.get('http://eams.sufe.edu.cn/eams/stdElectCourse!defaultPage.action?electionProfile.id=5385')`中为你的选课地址 (不同年级貌似不一样)
-2. 在 Terminal 中运行 `Third_Run.py`
-3. 根据命令行提示在弹出的浏览器完成登录, 回车
+1. 修改 Third_Run.py 文件 line 11: 
+
+   > https://github.com/YerbaPage/Course_selection_for_SUFE/blob/master/codes/Third_Run.py#L10-L11
+
+   ```Python
+   browser.get('http://eams.sufe.edu.cn/eams/stdElectCourse!defaultPage.action?electionProfile.id=5385')
+   ```
+
+   中为你的选课地址 (不同年级貌似不一样)
+
+2. 在 Terminal 中运行
+
+   ```bash
+   python Third_Run.py
+   ```
+
+3. 根据命令行提示在弹出的浏览器完成登录, 完成后回车
+
 4. 输入课程代码, 回车, 开始蹲点
 
 ## Update 
