@@ -23,12 +23,8 @@
 
    > https://github.com/YerbaPage/Course_selection_for_SUFE/blob/master/codes/Third_Run.py#L10-L11
 
-   ```Python
-   browser.get('http://eams.sufe.edu.cn/eams/stdElectCourse!defaultPage.action?electionProfile.id=5385')
-   ```
-
    中为你的选课地址 (不同年级貌似不一样)
-
+   
 2. 在 Terminal 中运行
 
    ```bash
