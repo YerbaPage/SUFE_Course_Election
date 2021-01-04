@@ -11,9 +11,11 @@
   pip install -r requirements.txt
   ```
 
-- Selenium Chrome WebDriver (已附带对应最新版本的 WebDriver for Windows)
+- Selenium Chrome WebDriver (已附带对应最新版本的 WebDriver for Windows & for Linux)
 
   > 可以在此下载与你的 Chrome 相应的版本 https://chromedriver.chromium.org/ 移动到 `codes/`目录下即可)
+  >
+  > Mac 和 Linux 需要另外设置下 PATH 即可正常使用
 
 ## Procedure
 
