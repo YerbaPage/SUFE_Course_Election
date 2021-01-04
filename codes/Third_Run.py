@@ -1,12 +1,17 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 from selenium import webdriver
 import time
 import sys
 from selenium.webdriver.common.keys import Keys
-# Openning browser
-browser = webdriver.Chrome()
+
+chrome_options = webdriver.ChromeOptions()
+chrome_options.binary_location = "/usr/bin/chromium-browser"
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-gpu')
+chrome_options.add_argument('--disable-dev-shm-usage')
+# chrome_options.add_argument('--headless')
+browser = webdriver.Chrome(chrome_options=chrome_options)
+
+
 # 不同年级选课网址不同 请注意调整
 browser.get('http://eams.sufe.edu.cn/eams/stdElectCourse!defaultPage.action?electionProfile.id=5385')
 
