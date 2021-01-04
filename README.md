@@ -21,9 +21,9 @@
 
 以第三轮选课为例: 
 
-1. 修改 Third_Run.py 文件 line 11: 
+1. 修改 Third_Run.py 文件 line 19: 
 
-   > https://github.com/YerbaPage/Course_selection_for_SUFE/blob/master/codes/Third_Run.py#L10-L11
+   > https://github.com/YerbaPage/Course_selection_for_SUFE/blob/master/codes/Third_Run.py#L18-L19
 
    中为你的选课地址 (不同年级貌似不一样)
    
