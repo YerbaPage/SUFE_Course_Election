@@ -15,7 +15,7 @@
 
   > 可以在此下载与你的 Chrome 相应的版本 https://chromedriver.chromium.org/ 移动到 `codes/`目录下即可)
   >
-  > Mac 和 Linux 需要另外设置下 PATH 即可正常使用
+  > Mac 和 Linux 需要另外设置下 PATH 即可正常使用(如 Ubuntu 可以 `cp chromedirver /usr/bin/`
 
 ## Procedure
 
