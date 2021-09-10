@@ -10,7 +10,7 @@ async function main() {
         var submitButton = document.getElementById("electableLessonList_filter_submit")
         submitButton.click()
         await sleep(1000);
-        var electButton = document.getElementById('306610')
+        var electButton = document.getElementsByClassName("lessonListOperator")[0]
         electButton.click()
         await sleep(1000);
         console.log('attempt', i);
