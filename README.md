@@ -1,11 +1,11 @@
 # Course_Election_for_SUFE
-财大自动选课脚本 无需插件支持各轮选课 
+SUFE自动选课脚本 无需插件支持各轮选课 
 
 ## Requirements
 
-- Chrome/Firefox 
+- Chrome/Firefox
 
-### Guide
+## Guide
 
 1. 在门户选课网页输入自己要选的课程序号
 
@@ -17,7 +17,7 @@
 
    <img src="https://cdn.jsdelivr.net/gh/YerbaTry/images@master/img/20210910115043.png" style="zoom:67%;" />
 
-4. 回车 (Chrome) 或点击 `Run`(Firefox) 运行
+4. 回车 (Chrome) 或点击 `Run` (Firefox) 运行
 
 
 ## Update
