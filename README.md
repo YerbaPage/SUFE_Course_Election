@@ -1,5 +1,5 @@
 # Course_Election_for_SUFE
-上海财经大学自动选课脚本 支持二轮三轮及开学选课
+财大自动选课脚本 无需插件支持各轮选课 
 
 ## Requirements
 
@@ -8,8 +8,16 @@
 ### Guide
 
 1. 在门户选课网页输入自己要选的课程序号
-2. 浏览器快捷键 F12 并进入 Console
-3. Console 中粘贴 `main.js` 中代码, 回车运行
+
+   <img src="https://cdn.jsdelivr.net/gh/YerbaTry/images@master/img/20210910115005.png"  />
+
+2. 浏览器中快捷键 F12 进入开发者工具
+
+3. 进入 Console, 粘贴 `main.js` 中代码
+
+   <img src="https://cdn.jsdelivr.net/gh/YerbaTry/images@master/img/20210910115043.png" style="zoom:67%;" />
+
+4. 回车(Chrome) 或点击`Run`(Firefox) 运行
 
 
 ## Update 
