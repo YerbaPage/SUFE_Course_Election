@@ -1,15 +1,19 @@
 from selenium import webdriver
 import time
 import sys
+# import yagmail
 from selenium.webdriver.common.keys import Keys
 
-chrome_options = webdriver.ChromeOptions()
-chrome_options.binary_location = "/usr/bin/chromium-browser"
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-gpu')
-chrome_options.add_argument('--disable-dev-shm-usage')
-# chrome_options.add_argument('--headless')
-browser = webdriver.Chrome(chrome_options=chrome_options)
+
+
+options = webdriver.ChromeOptions()
+# chrome_options.binary_location = "/usr/bin/chromium-browser"
+options.add_argument('--no-sandbox')
+options.add_argument('--disable-gpu')
+options.add_argument('--disable-dev-shm-usage')
+# chrome_options.add_argument('--headless') # 算了 懒得写自动登陆了 
+browser = webdriver.Chrome(options=options)
+
 
 
 # 不同年级选课网址不同 请注意调整
@@ -25,12 +29,10 @@ final = '开始捡漏'
 
 while "成" not in list(final):
     try:
-        xuanke = browser.find_element_by_xpath(
-            '/html/body/div[10]/div[1]/div[2]')
+        xuanke = browser.find_element_by_xpath('/html/body/div[10]/div[1]/div[2]')
         xuanke.click()
         # Searching
-        textbox = browser.find_element_by_xpath(
-            '//*[@id="electableLessonList"]/thead/tr[1]/th[2]/div/input')
+        textbox = browser.find_element_by_xpath('//*[@id="electableLessonList"]/thead/tr[1]/th[2]/div/input')
         textbox.clear()
         # 输入目标课程序号
         textbox.send_keys(course_id)
@@ -38,12 +40,10 @@ while "成" not in list(final):
         textbox.send_keys(Keys.ENTER)
         try:
             # Submitting
-            button = browser.find_element_by_xpath(
-                '/html/body/div[10]/div[3]/form/div/table/tbody/tr/td[11]/a')
+            button = browser.find_element_by_xpath('/html/body/div[10]/div[3]/form/div/table/tbody/tr/td[11]/a')
             button.send_keys(Keys.ENTER)
             # Results
-            result = browser.find_element_by_xpath(
-                '//*[@id="cboxLoadedContent"]/table/tbody/tr[1]/td/div')
+            result = browser.find_element_by_xpath('//*[@id="cboxLoadedContent"]/table/tbody/tr[1]/td/div')
             final = result.text
             if "功" in list(final):
                 # end
@@ -59,3 +59,7 @@ while "成" not in list(final):
     except:
         input('Some problem occurs, press ENTER if you have fixed it')
 print(final)
+
+
+# yag = yagmail.SMTP(user='', password='', host='')
+# yag.send(to = [''], subject = 'SUFE CLASS CHOOSING 2021', contents = ['Congrats! Course {} is in your bucket!'.format(course_id)])
