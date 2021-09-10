@@ -3,14 +3,20 @@
 
 ## Requirements
 
-- Chrome 
+- Chrome/Firefox 
+
+### Guide
+
+1. 在门户选课网页输入自己要选的课程序号
+2. 浏览器快捷键 F12 并进入 Console
+3. Console 中粘贴 `main.js` 中代码, 回车运行
 
 
 ## Update 
 
 #### 2021/9/10
 
-- 更新为 js version
+- update to simple js version
 
 #### 2021/1/4
 
